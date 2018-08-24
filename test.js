@@ -1,1 +1,6 @@
-alert("Hello World!");  
+alert("Hello World!");
+// one line comment
+ 
+/* multiple
+lines
+comment */
