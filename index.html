@@ -25,7 +25,7 @@
         var user="Daria";
         logName();  
             
-        /*wykona się w takiej kolejności:
+        /*HOISTING:
         function logName(){
             var name;
             console.log(name);
@@ -37,7 +37,19 @@
         user="Daria";
         logName();
         */
-       
+
+       /*WYKONANIE:
+       //zasięg globalny
+       var user;
+       console.log(user); //zwróci undefined
+       user="Daria";
+       //zasięg funkcji
+       var name;
+       console.log(name); //zwróci undefined
+       name="Witold";
+       console.log(user); //zwróci "Daria"
+       */
+
     </script>
 </body>
 </html>
