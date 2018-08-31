@@ -16,16 +16,13 @@
     </div>
     <script src="test.js">
     
-        var a = "zmienna globalna";
+        var a = "nic";
 
-        function one() {
-            var a = "zmienna lokalna";
-            console.log(a);
+        if (true) {
+            var a = "coś";
         }
 
-        one();
         console.log(a);
-        console.log("--------------");
         
     </script>
 </body>
