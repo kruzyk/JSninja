@@ -15,27 +15,17 @@
         <p>blah blah bla</p>
     </div>
     <script src="test.js">
-        //var:
+        var a = null; //1 zmienna
         function varTest(){
-            var a = true;
+            var a = true; //2 zmienna
             if (true){
-                var a = false;
+                var a = false; //2 zmienna nadpisana
                 console.log(a);
             }
             console.log(a);
         }
         varTest();
-
-        //let i const:
-        function letTest(){
-            let a = true;
-            if (true){
-                let a = false;
-                console.log(a);
-            }
-            console.log(a);
-        }
-        letTest();
+        console.log(a);
     </script>
 </body>
 </html>
