@@ -16,21 +16,26 @@
     </div>
     <script src="test.js">
     
-        var a = "nic";
+        var a = "0";
+        
+        function one() {
+            var a = "1";
+            console.log("zmienna w funkcji 1: " + a);
 
-        if (true) {
-            var a = "coś";
+            function two() {
+                var a = "2";
+                console.log("zmienna w funkcji 2: " + a);
+
+                function three() {
+                    var a = "3";
+                    console.log("zmienna w funkcji 3: " + a);
+                }
+                three();
+            }
+            two();
         }
-
-        console.log(a);
-
-        let b = "nic";
-
-        if (true) {
-            let b = "coś";
-        }
-
-        console.log(b);
+        one();
+        console.log("zmienna w zasięgu globalnym: " + a);
         
     </script>
 </body>
