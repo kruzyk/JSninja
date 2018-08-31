@@ -15,41 +15,22 @@
         <p>blah blah bla</p>
     </div>
     <script src="test.js">
-        
-        function logName(){
-            console.log(name);
-            var name="Witold";
-            console.log(user);
-        }
-        console.log(user);
-        var user="Daria";
-        logName();  
-            
-        /*HOISTING:
-        function logName(){
-            var name;
-            console.log(name);
-            name="Witold";
-            console.log(user);
-        }
-        var user;
-        console.log(user);
-        user="Daria";
-        logName();
-        */
+        var a = "a - zakres globalny";
+        let b = "b - zakres globalny";
+        const c = "c - zakres globalny";
 
-       /*WYKONANIE:
-       //zasięg globalny
-       var user;
-       console.log(user); //zwróci undefined
-       user="Daria";
-       //zasięg funkcji
-       var name;
-       console.log(name); //zwróci undefined
-       name="Witold";
-       console.log(user); //zwróci "Daria"
-       */
+        {
+            var a = "a - zakres lokalny";
+            let b = "b - zakres lokalny";
+            const c = "c - zakres lokalny";
+            console.log(a);
+            console.log(b);
+            console.log(c);
+        }
 
+        console.log(a);
+        console.log(b);
+        console.log(c);
     </script>
 </body>
 </html>
