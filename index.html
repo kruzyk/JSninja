@@ -16,26 +16,13 @@
     </div>
     <script src="test.js">
     
-        var a = "0";
-        
-        function one() {
-            //var a = "1"; //zmienna lokalna
-            console.log("zmienna w funkcji 1: " + a);
-
-            function two() {
-                //var a = "2";
-                console.log("zmienna w funkcji 2: " + a);
-
-                function three() {
-                    var a = "3";
-                    console.log("zmienna w funkcji 3: " + a);
-                }
-                three();
-            }
-            two();
+        console.log(a);
+        var a = 5;
+        function one(){
+            console.log(b);
+            var b = 10;
         }
         one();
-        console.log("zmienna w zasięgu globalnym: " + a);
         
     </script>
 </body>

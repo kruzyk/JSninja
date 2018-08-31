@@ -6,10 +6,10 @@ var total_spend = 0;
 
 while (bank_account >= total_price) {
     console.log("I buy a phone and accessories!");
-    BankAccount = bank_account - total_price;
+    bank_account = bank_account - total_price;
     console.log("Money on my account:");
     console.log(bank_account);
     console.log("Money spent:");
-    TotalSpend = total_spend + total_price;
+    total_spend = total_spend + total_price;
     console.log(total_spend);
 }
