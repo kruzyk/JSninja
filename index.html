@@ -15,16 +15,16 @@
         <p>blah blah bla</p>
     </div>
     <script src="test.js">
-        var a = null; //1 zmienna
-        function varTest(){
-            var a = true; //2 zmienna
+        const a = null; //1 zmienna
+        function constTest(){
+            const a = true; //2 zmienna
             if (true){
-                var a = false; //2 zmienna nadpisana
+                const a = false; //3 zmienna
                 console.log(a);
             }
             console.log(a);
         }
-        varTest();
+        constTest();
         console.log(a);
     </script>
 </body>
