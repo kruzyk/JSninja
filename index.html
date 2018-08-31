@@ -15,22 +15,27 @@
         <p>blah blah bla</p>
     </div>
     <script src="test.js">
-        var a = "a - zakres globalny";
-        let b = "b - zakres globalny";
-        const c = "c - zakres globalny";
-
-        {
-            var a = "a - zakres lokalny";
-            let b = "b - zakres lokalny";
-            const c = "c - zakres lokalny";
+        //var:
+        function varTest(){
+            var a = true;
+            if (true){
+                var a = false;
+                console.log(a);
+            }
             console.log(a);
-            console.log(b);
-            console.log(c);
         }
+        varTest();
 
-        console.log(a); // zmienna a została nadpisana nową wartością w zasięgu globalnym
-        console.log(b);
-        console.log(c);
+        //let i const:
+        function letTest(){
+            let a = true;
+            if (true){
+                let a = false;
+                console.log(a);
+            }
+            console.log(a);
+        }
+        letTest();
     </script>
 </body>
 </html>
